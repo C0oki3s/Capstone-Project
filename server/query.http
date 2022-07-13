@@ -1,0 +1,89 @@
+POST http://localhost:5000/signup
+Content-Type: application/json
+
+{
+    "username":"rohith+11",
+    "password":"Sairohith@9",
+    "email" : "rohith.studyabroad@gmail.com",
+    "location":"andhra pradesh",
+    "dob": "13-05-2001",
+    "phone": "7093704454"
+}
+
+###
+
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email":"rohith83090@gmail.com",
+    "password":"Sairohith@9"
+}
+
+###
+GET http://localhost:5000/users
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MmEyM2QwYjI3Y2YwNDBiMTU5Y2U0MzIiLCJlbWFpbCI6InJvaGl0aC5zdHVkeWFicm9hZEBnbWFpbC5jb20iLCJLZXlwYWlycyI6MCwiaWF0IjoxNjU0Nzk5Njg3LCJleHAiOjE2NTQ4ODYwODd9.9DQ34jinXIxfA3WCrk-3-YguKJeR9gySVEdBlrBRslI
+
+###
+
+POST http://localhost:5000/apikey
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MmEyM2QwYjI3Y2YwNDBiMTU5Y2U0MzIiLCJlbWFpbCI6InJvaGl0aC5zdHVkeWFicm9hZEBnbWFpbC5jb20iLCJLZXlwYWlycyI6MCwiaWF0IjoxNjU0Nzk5Njg3LCJleHAiOjE2NTQ4ODYwODd9.9DQ34jinXIxfA3WCrk-3-YguKJeR9gySVEdBlrBRslI
+
+{
+    "apiname":"ccfd"
+}
+
+###
+
+GET http://localhost:5000/apikey
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MjMxZjFiNTkyYjJhN2MwMDcwY2M3MDIiLCJlbWFpbCI6InJvaGl0aDgzMDkwQGdtYWlsLmNvbSIsIktleXBhaXJzIjoxLCJpYXQiOjE2NTQ3NzE4NTEsImV4cCI6MTY1NDg1ODI1MX0.QxzOJEOLFS8bdvuVONyCLKz55NXFChLChm2rPTV3UOI
+
+###
+DELETE  http://localhost:5000/apikey
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MjI5OWUzZDExMTFlM2IwNDU5ZTY4MDYiLCJlbWFpbCI6InJvaGl0aDgzMDkwQGdtYWlsLmNvbSIsIktleXBhaXJzIjowLCJpYXQiOjE2NDY4OTQ3NDMsImV4cCI6MTY0Njk4MTE0M30.iY5XPzngajcBRsy6JJulxOknCa2DxeIT7DlajcxlLFA
+
+{
+    "apiname":"ccfd"
+}
+
+###
+POST http://localhost:5000/apikey/verify
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MjMxZjFiNTkyYjJhN2MwMDcwY2M3MDIiLCJlbWFpbCI6InJvaGl0aDgzMDkwQGdtYWlsLmNvbSIsIktleXBhaXJzIjoxLCJpYXQiOjE2NTQ3NzE4NTEsImV4cCI6MTY1NDg1ODI1MX0.QxzOJEOLFS8bdvuVONyCLKz55NXFChLChm2rPTV3UOI
+
+{
+    "apikey":"ccfd_I&OH_u0^8~L!_XTRbIMb/Wo4Q9J5dTe$~0wR@6y$.fraud_detention",
+    "secret":"1v7C&YbFNpIl!cp50$Ga^bG.17Zpg4"
+}
+
+###
+
+GET http://localhost:5000/getfiles
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MjMxZjFiNTkyYjJhN2MwMDcwY2M3MDIiLCJlbWFpbCI6InJvaGl0aDgzMDkwQGdtYWlsLmNvbSIsIktleXBhaXJzIjoxLCJpYXQiOjE2NTQ3NzE4NTEsImV4cCI6MTY1NDg1ODI1MX0.QxzOJEOLFS8bdvuVONyCLKz55NXFChLChm2rPTV3UOI
+
+###
+
+POST http://localhost:5000/algorithm/xgboost
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MjMxZjFiNTkyYjJhN2MwMDcwY2M3MDIiLCJlbWFpbCI6InJvaGl0aDgzMDkwQGdtYWlsLmNvbSIsIktleXBhaXJzIjoxLCJpYXQiOjE2NTQ3NzE4NTEsImV4cCI6MTY1NDg1ODI1MX0.QxzOJEOLFS8bdvuVONyCLKz55NXFChLChm2rPTV3UOI
+
+{
+    "file_name":"6231f1b592b2a7c0070cc702_7k37+VpvmFyCFy#h_q+U_creditcard.csv"
+}
+
+####
+
+POST http://localhost:5000/frontend/random_forest
+Content-Type: application/json
+
+{
+    "apikey":"ccfd_I&OH_u0^8~L!_XTRbIMb/Wo4Q9J5dTe$~0wR@6y$.fraud_detention",
+    "secret":"1v7C&YbFNpIl!cp50$Ga^bG.17Zpg4"
+}
+
+
